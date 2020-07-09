@@ -116,6 +116,9 @@ for (var i = 0; i < 6; i++) {
 }
 }
 askColorQuestion();
+
+
+function askAboutDrinks() {
 var favoriteDrink = 'coffee';
 
 var favoriteDrinkGuess = prompt('what does nich like to drink?');
@@ -125,3 +128,6 @@ if(favoriteDrinkGuess === favoriteDrink){
 } else {
   alert('guess again');
 }
+}
+
+askAboutDrinks();
