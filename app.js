@@ -90,7 +90,10 @@ function cook(potato){
 cook('russet'); // calling the function cook - and passing it the argument 'russet as potato
 cook('pizza'); // invoking the function cook - and passing it the value of the string of pizza as the first parameter `potato`
 
-
+// do the function declaration
+// Check the curly braces to wrap the function
+//   line 97-115
+function askColorQuestion() {
 
 for (var i = 0; i < 6; i++) {
   //7 begins
@@ -101,7 +104,7 @@ for (var i = 0; i < 6; i++) {
   for (var answerIndex = 0; answerIndex < colorsILikeCorrectAnswers.length; answerIndex++) {
     //Start checking
     if (colorILikeResponse === colorsILikeCorrectAnswers[answerIndex]) {
-      console.log('it worked');
+      alert('You guessed the right color!');
       i = 1000000;
       break;
     }
@@ -111,7 +114,11 @@ for (var i = 0; i < 6; i++) {
 
 
 }
+}
+askColorQuestion();
 
+
+function askAboutDrinks() {
 var favoriteDrink = 'coffee';
 
 var favoriteDrinkGuess = prompt('what does nich like to drink?');
@@ -121,3 +128,6 @@ if(favoriteDrinkGuess === favoriteDrink){
 } else {
   alert('guess again');
 }
+}
+
+askAboutDrinks();
